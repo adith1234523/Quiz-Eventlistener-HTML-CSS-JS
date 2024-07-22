@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href=''>
+    <script src='main.js'></script>
+</head>
+<body>
+    <div style="margin-top: 50px; text-align: center;">
+        <div style="background-color: bisque; width: 500px; height: 500px;">
+         <div>
+            <h2 style="text-align: left; margin: 10px;">1. who termed fanumtax?</h2>
+            
+            <ul style="list-style: none; text-decoration: none;" id="tag">
+                <li style="background-color: rgb(250, 249, 248); margin-right: 50px; text-align: left;" class="list">kai</li><br>
+                <li style="background-color: rgb(250, 249, 248); margin-right: 50px; text-align: left;" class="list">speed</li><br>
+                <li style="background-color: rgb(250, 249, 248); margin-right: 50px; text-align: left;" class="list">johan</li><br>
+                <li style="background-color: rgb(250, 249, 248); margin-right: 50px; text-align: left;" class="list">ksi</li><br>
+            </ul>
+            
+         </div>
+        </div>
+    </div>
+    <script>
+        const check=document.querySelectorAll(".list");
+        check.forEach(element => {
+    element.addEventListener("click",function(e){
+        
+        if(e.target.textContent==="kai"){
+            e.target.style.backgroundColor = "blue";
+        }
+        else{
+            e.target.style.backgroundColor = "red";
+        }
+       })
+});
+        
+    </script>
+</body>
+</html>
